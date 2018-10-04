@@ -4,14 +4,12 @@ class Pila {
         this.tope = 0;
         this.pila = new Array(size)
     }
-
     push(x){
         if(this.tope < this.maxSize){
             this.tope++
             this.pila[this.tope-1] = x
         } else throw "Stack Overflow"
     }
-
     pop(){
         let dato
         if(this.tope > 0){
@@ -22,11 +20,8 @@ class Pila {
             return dato
         } else throw "Stack Underflow"
     }
-
     print(){
-        for(let i = this.maxSize - 1; i >= 0; i--){
-            console.log("[ "+ this.pila[i] +" ]")
-        }
+        for(let i = this.maxSize - 1; i >= 0; i--) console.log("[ "+ this.pila[i] +" ]")
     }
 }
 
