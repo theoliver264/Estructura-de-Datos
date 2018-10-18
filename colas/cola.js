@@ -43,5 +43,5 @@ class Cola {
     }
 }
 
-let cola = new Cola(10)
+let cola = new Cola(5)
 for(let i = 1; i<=10; i++) cola.insert(i)
